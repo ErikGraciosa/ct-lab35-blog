@@ -4,15 +4,15 @@ import { useDispatch } from '../../state/PostProvider';
 import styles from './PostForm.css';
 
 function PostForm() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
   const handleSubmit = e => {
     e.PreventDefault();
-
-    dispatch(createPost({ title, body }));
+    console.log('clicked');
+    // dispatch(createPost({ title, body }));
   };
 
   return (
