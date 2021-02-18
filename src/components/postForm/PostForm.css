@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+}
+
+label {
+  margin: auto;
+}
+
+button {
+  width: 100px;
+  margin: auto;
+}
+
+p {
+  margin: auto;
+}
