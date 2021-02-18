@@ -1,4 +1,3 @@
-// import { deletePost } from '../actions/postActions';
 import { reducer } from './postReducer';
 import { createPost, deletePost } from '../actions/postActions';
 
@@ -64,7 +63,5 @@ describe('post reducer tests', () => {
         body: 'small sections'
       }]
     });
-
-
   });
 });
