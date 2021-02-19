@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createPost } from '../../actions/postActions';
-import { useDispatch } from '../../state/PostProvider';
+// import { useDispatch } from '../../state/PostProvider';
 import styles from './PostForm.css';
 
 function PostForm() {
