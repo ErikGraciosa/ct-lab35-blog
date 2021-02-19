@@ -1,9 +1,9 @@
-import React, { createContext, useContext, useReducer} from 'react';
+import React, { createContext, useContext, useReducer } from 'react';
 import { reducer, initialState } from '../reducers/postReducer';
 
 export const PostContext = createContext(null);
 
-export function DogProvider({ children }) {
+export function PostProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (   
