@@ -2,10 +2,9 @@ import React from 'react';
 
 function Comment() {
   return (
-    <div>
-      <p>some text</p>
-      <button>delete the comment</button>
-    </div>
+    <>
+      <li>First comment</li>
+    </>
   );
 }
 

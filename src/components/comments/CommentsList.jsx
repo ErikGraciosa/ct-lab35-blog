@@ -4,9 +4,9 @@ import Comment from './Comment';
 
 function CommentsList() {
   return (
-    <div>
+    <ul>
       <Comment />
-    </div>
+    </ul>
   );
 }
 

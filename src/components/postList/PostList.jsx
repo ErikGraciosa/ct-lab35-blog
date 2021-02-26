@@ -8,7 +8,7 @@ function PostList() {
   const posts = useSelector(getPosts);
 
   return (
-    <div >post placeholder for
+    <div >
       {posts.map(post => <Post key={post.title} {...post}/>)}
     </div>
   );

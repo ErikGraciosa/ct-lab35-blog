@@ -8,10 +8,11 @@ function PostForm() {
 
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
+  const [comments] = useState([]);
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(createPost({ title, body }));
+    dispatch(createPost({ title, body, comments }));
   };
 
   return (
