@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createPost } from '../../actions/postActions';
-import { useDispatch } from '../../state/PostProvider';
+import { useDispatch } from 'react-redux';
 import styles from './PostForm.css';
 
 function PostForm() {
@@ -8,10 +8,11 @@ function PostForm() {
 
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
+  const [comments] = useState([]);
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(createPost({ title, body }));
+    dispatch(createPost({ title, body, comments }));
   };
 
   return (

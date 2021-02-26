@@ -1,9 +1,10 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import styles from './Post.css';
-import { useDispatch } from '../../state/PostProvider';
+import { useDispatch } from 'react-redux';
 import { deletePost } from '../../actions/postActions';
- 
+import CommentForm from '../commentForm/CommentForm';
+import CommentList from '../comments/CommentsList';
 
 function Post({ title, body }) {
   const dispatch = useDispatch();
@@ -16,7 +17,10 @@ function Post({ title, body }) {
     <div className={styles.singlePost}>
       <p>{title}</p>
       <p>{body}</p>
-      <button onClick={handleClick}>delete</button>
+      <CommentForm/>
+      <CommentList />
+      <button onClick={handleClick}>Delete Post</button>
+      
     </div>
   );
 }
