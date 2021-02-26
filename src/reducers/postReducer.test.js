@@ -13,7 +13,6 @@ describe('post reducer tests', () => {
     };
 
     const action = createPost(post);
-
     const newState = reducer(state, action);
 
     expect(newState).toEqual({
@@ -34,7 +33,6 @@ describe('post reducer tests', () => {
     };
     const action = createPost(post);
     state = reducer(state, action);
-
 
     const post2 = {
       title: 'sweep',
