@@ -1,4 +1,4 @@
-import { reducer } from './postReducer';
+import  reducer  from './postReducer';
 import { createPost, deletePost } from '../actions/postActions';
 
 describe('post reducer tests', () => {
